@@ -105,7 +105,7 @@ st.write("Enter the % of debt that will used to fund this acquisition")
 
 debt_input = st.slider("Debt %",0,100,0)
 debt = round(debt_input/100,2)
-equity = round((100-debt)/100,2)
+equity = round((100-debt_input)/100,2)
 
 col1, col2 = st.columns(2)
 col1.metric("Debt %", round(debt*100,2))
